@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login</title>
+
+  <meta  charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Css/Style2.css" />
+
+</head>
+
+
+
+<body bgcolor="lightblue">
+  <button><a href="index.html">Voltar</button></a>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     <center>
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="login.php"> 
+          <h1>Login de Usuário</h1> 
+            <h2>Preencha os campos para utilizar a plataforma</h2>
+          <p> 
+            <label>Seu e-mail</label>
+            <input id="email" name="email" type="text" placeholder="meuemail@gmail.com">
+          </p>
+         
+          <p> 
+            <label>Sua Senha</label>
+            <input id="senha" name="senha"  type="password" placeholder="ex. 123456" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          
+            <input type="submit" value="entrar" id="entrar" name="entrar">
+   
+
+        </form>
+      </div>
+    </div>
+  </div>
+      </center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+</body>

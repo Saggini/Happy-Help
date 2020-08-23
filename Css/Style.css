@@ -1,0 +1,140 @@
+
+
+	
+
+
+p{
+    color:white;
+}
+
+
+
+h2{
+
+	color:black ;
+	font-size: 30px;
+}	
+
+
+
+h3{
+      
+    color: black;
+    font-size: 30px;
+  }
+
+
+h4{
+      
+    color: black;
+    font-size: 30px;
+  }
+
+
+h5{
+      
+    color: black;
+    font-size: 30px;
+  }
+
+
+
+h6{
+      
+    color: black;
+    font-size: 30px;
+  }
+
+
+
+.btn{
+	font-family: arial;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:700;
+	color: black;
+	border:none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 30px;
+	margin-right: 50px;
+	position: absolute;
+	top:1%;
+	right:5%;
+	width:10%;
+
+}
+
+
+.btn-black{
+	background: ;
+	color:black;
+	box-shadow: 0 5px 0 ;
+}	
+
+.btn-black:hover{
+	background:;
+	color:black ;
+	box-shadow: 0 5px 0 black;
+}	
+
+
+
+.direitos{
+	margin-top: 5%;
+	color: white;
+}
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: black;
+
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #282b2d;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+}
+
+
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+   
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}

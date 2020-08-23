@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro Doador</title>
+
+  <meta  charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript">
+            function validar(){
+                var nome = formuser.nome.value;
+                var cpf = formuser.cpf.value;
+                var celular = formuser.celular.value;
+                var cidade = formuser.cidade.value;
+                var endereco = formuser.endereco.value;
+                var email = formuser.email.value;
+                var senha = formuser.senha.value;
+                
+                if(nome == ""){
+                    alert('Preencha o campo nome.');
+                    formuser.nome.focus();
+                    return false;
+                }
+                
+                if(cpf == ""){
+                    alert('Preencha o campo CPF.');
+                    formuser.cpf.focus();
+                    return false;
+                }
+
+                if(celular == ""){
+                    alert('Preencha o campo Celular com o DDD e os 9 dígitos.');
+                    formuser.celular.focus();
+                    return false;
+                }
+
+                if(cidade == ""){
+                    alert('Preencha o campo Cidade.');
+                    formuser.cidade.focus();
+                    return false;
+                }
+
+                if(endereco == ""){
+                    alert('Preencha o campo Endereço.');
+                    formuser.endereco.focus();
+                    return false;
+                }
+
+                if(email == "" || email.indexOf('@') == -1 ){
+                    alert('Preencha o campo E-mail.');
+                    formuser.email.focus();
+                    return false;
+                }
+                
+                if(senha == "" || senha.length <= 5){
+                    alert('Preencha o campo senha com minimo 6 caracteres');
+                    formuser.senha.focus();
+                    return false;
+                }
+            }
+        </script>
+  <link rel="stylesheet" type="text/css" href="Css/Style2.css">
+</head>
+
+
+
+<body bgcolor="lightblue">
+
+<button><a href="index.html">Voltar</button></a>
+
+<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div  id="cadastro_doador">
+        <form name="formuser" method="POST" action=""> 
+          <h1>Cadastro Doador </h1> 
+          
+            <label>Nome completo:</label>
+            <input  name="nome" type="text" id="nome" placeholder="João da Silva Santos">
+            <br><br>
+            <label>Selecione sua data de nascimento:</label>
+            <input type="date">
+            <br><br>
+            <label>CPF:</label> 
+            <input  name="cpf"  type="" id="cpf" placeholder="xxx.xxx.xxx.-xx">
+            <br><br>
+            <label>Celular:</label>
+            <input  name="celular" type="text" placeholder="(DDD) Número do telefone" id="cel"> 
+            <br><br>
+            <label >Cidade:</label>
+            <input  name="cidade"  type="text" placeholder="Cidade onde mora" id="cid"> 
+            <br><br>
+            <label>Endereço:</label>
+            <input  name="endereco"  type="text" placeholder="Rua e número da residência" id="ende"> 
+            <br><br>
+            <label >Seu e-mail:</label>
+            <input  name="email" type=text placeholder="informe o e-mail" id="email"> 
+            <br><br>
+            <label>Senha:</label>
+            <input  name="senha"  type="password" placeholder="1234" id="senha">
+          
+         
+          <p>Escolha a categoria da sua doação:</p>
+
+    <select> 
+      <option type="text" name="roupas"/> Roupas 
+      <option type="text" name="finanças"/> Finanças 
+      <option type="text" name="alimentos"/> Alimentos
+      <option type="text" name="eletrodomésticos"/> Eletrodomésticos
+      <option type="text" name="móveis"/> Móveis
+      <option type="text" name="outros"/> Outros
+    </select> 
+      <br><br>
+    <p>Anexar uma imagem do item doado</p>
+    <input type="file">
+
+          <p> 
+            <input type="submit" onclick="return validar()"> 
+          </p>
+          
+          <center><p class="link">  
+            Já tem conta?
+            <a href="Login.html"> Ir para Login </a>
+          </p>
+        </center>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

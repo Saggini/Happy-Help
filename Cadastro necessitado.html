@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta  charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Css/Style2.css">
+	<title>Cadastro Necessitado</title>
+  
+</head>
+<style>
+    
+</style>
+
+<body bgcolor="lightblue">
+<header class="cabecalho">
+    
+</header>
+
+
+<button><a href="index.html">Voltar</button></a>
+
+<div  class="container" >
+    <a class="links" id="paracadastro"></a>
+
+<div class="center"  id="cadastro_necessitado">
+<form name="formuser" method="post" action="">
+<h1> Cadastro do necessitado </h1>
+    
+            <label>Nome completo:</label>
+            <input  name="nome" type="text" id="nome" placeholder="João da Silva Santos">
+            <br><br>
+            <label>Selecione sua data de nascimento:</label>
+            <input type="date">
+            <br><br>
+            <label>CPF:</label> 
+            <input  name="cpf"  type="" id="cpf" placeholder="xxx.xxx.xxx.-xx">
+            <br><br>
+            <label>Celular:</label>
+            <input  name="celular" type="text" placeholder="(DDD) Número do telefone" id="cel"> 
+            <br><br>
+            <label >Cidade:</label>
+            <input  name="cidade"  type="text" placeholder="Cidade onde mora" id="cid"> 
+            <br><br>
+            <label>Endereço:</label>
+            <input  name="endereco"  type="text" placeholder="Rua e número da residência" id="ende"> 
+            <br><br>
+            <label >Seu e-mail:</label>
+            <input  name="email" type=text placeholder="informe o e-mail" id="email"> 
+            <br><br>
+            <label>Senha:</label>
+            <input  name="senha"  type="password" placeholder="1234" id="senha">
+          
+         
+        <br><br>
+    	Escolha o que deseja receber de doação:
+    <select>
+        <option type="text" name="roupas"/> Roupas 
+	    <option type="text" name="finanças" /> Finanças 
+	    <option type="text" name="alimentos"/> Alimentos
+	    <option type="text" name="eletrodomésticos"/> Eletrodomésticos
+        <option type="text" name="móveis"/> Móveis
+	    <option type="text" name="outros"/> Outros
+</select> 
+ 	<br><br><br>
+    <font>Deixe sua observação sobre outros itens que necessita:</font>
+    <br>
+    <textarea style="resize: none" name="obs" rows="10" cols="40"></textarea>         
+    <br><br>
+    
+	<input type="checkbox"  />Li e concordo os termos <br><br>
+
+         
+           <p> 
+            <input type="submit" onclick="return validar()"> 
+          </p>
+          
+          
+          
+          
+<center><p class="link">  
+    Já tem conta?
+<a href="Login.html"> Ir para Login </a>
+</p></center>
+ </div>
+</div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
